@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    = stylesheet_link_tag "https://js.arcgis.com/3.8/js/esri/css/esri.css"
+    :javascript
+      dojoConfig = { async: true, parseOnLoad: true }
+    = javascript_include_tag "https://js.arcgis.com/3.8/"
+    :javascript
+      require(["dojo/parser", "dijit/layout/ContentPane"]);
+  %body
+    %div{ "data-dojo-type" => "dijit/layout/ContentPane" }
+      Hi, pretty boring huh?
